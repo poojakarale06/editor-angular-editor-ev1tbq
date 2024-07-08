@@ -1,0 +1,12 @@
+<p>home works!</p>
+
+<form #login="ngForm" (ngSubmit)="onSubmit(login.value)">
+  <input name="name" [(ngModel)]="name" />
+  <input name="password" [(ngModel)]="password" />
+  <button>Submit</button>
+</form>
+
+<p>{{ title }}</p>
+<p>{{ newTitle }}</p>
+<input type="text" #data />
+<button (click)="sendData(data.value)">Click me</button>
